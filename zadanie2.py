@@ -5,8 +5,8 @@ colors = {'red': (255, 0, 0), 'green': (0, 128, 0), 'black': (0, 0, 0)}
 
 print(f'Словарь цветов: {colors}')
 
-l=[]
 #записать свой цвет
-l = map(print(), input('\nВведите через пробел: ').split())
+print('Добавление цвета')
+l = input('Введите название своего цвета: ')
+colors[l] = tuple(map(int, input('Введите 3 значения rgb нового цвета: ').split()))
 print(f'Словарь цветов: {colors}')
-print(l)
